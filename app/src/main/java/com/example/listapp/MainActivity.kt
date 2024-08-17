@@ -5,7 +5,6 @@ import android.text.Editable
 import android.text.TextWatcher
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.viewpager2.widget.ViewPager2
 import com.example.listapp.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -29,20 +28,21 @@ class MainActivity : AppCompatActivity() {
 
 
         var items = listOf(
-            ListItem("Title","Subtitle"),
-            ListItem("Title","Subtitle"),
-            ListItem("Title","Subtitle"),
-            ListItem("Title","Subtitle"),
-            ListItem("Title","Subtitle"),
-            ListItem("Title","Subtitle"),
-            ListItem("Title","Subtitle"),
-            ListItem("Title","Subtitle"),
-            ListItem("Title","Subtitle"),
-            ListItem("Title","Subtitle"),
-            ListItem("Title","Subtitle"),
-            ListItem("Title","Subtitle"),
-            ListItem("Title","Subtitle"),
-            ListItem("Title","Subtitle")
+            ListItem("apple", "Subtitle"),
+            ListItem("apricot", "Subtitle"),
+            ListItem("avocado", "Subtitle"),
+            ListItem("banana", "Subtitle"),
+            ListItem("bell pepper", "Subtitle"),
+            ListItem("bilberry", "Subtitle"),
+            ListItem("blackberry", "Subtitle"),
+            ListItem("blackcurrant", "Subtitle"),
+            ListItem("blood orange", "Subtitle"),
+            ListItem("blueberry", "Subtitle"),
+            ListItem("boysenberry", "Subtitle"),
+            ListItem("breadfruit", "Subtitle"),
+            ListItem("canary melon", "Subtitle"),
+            ListItem("cantaloupe", "Subtitle"),
+            ListItem("cherimoya", "Subtitle")
         )
         listAdapter = ItemListAdapter(items)
         binding.rvItems.apply {
